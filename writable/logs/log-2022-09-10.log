@@ -1,0 +1,124 @@
+ERROR - 2022-09-10 02:10:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'booklen', 3306, '', 0)
+#1 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp\htdocs\booklen\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\booklen\app\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\booklen\app\Controllers\Login.php(32): App\Models\LoginModel->cekLogin('tasya', '7d19636b89246d5...')
+#6 E:\xampp\htdocs\booklen\system\CodeIgniter.php(904): App\Controllers\Login->cekLogin()
+#7 E:\xampp\htdocs\booklen\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 E:\xampp\htdocs\booklen\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\booklen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\xampp\htdocs\booklen\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp\htdocs\booklen\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xampp\htdocs\booklen\app\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xampp\htdocs\booklen\app\Controllers\Login.php(32): App\Models\LoginModel->cekLogin('tasya', '7d19636b89246d5...')
+#5 E:\xampp\htdocs\booklen\system\CodeIgniter.php(904): App\Controllers\Login->cekLogin()
+#6 E:\xampp\htdocs\booklen\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 E:\xampp\htdocs\booklen\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\booklen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\booklen\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-09-10 02:10:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(32): App\Models\LoginModel->cekLogin('tasya', '7d19636b89246d5a90c4a7ceb0a7142345bbf020')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Login->cekLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-10 02:11:14 --> mysqli_sql_exception: Column 'idBuku' cannot be null in E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bo...', 0)
+#1 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 E:\xampp\htdocs\booklen\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 E:\xampp\htdocs\booklen\app\Models\BookModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 E:\xampp\htdocs\booklen\app\Controllers\Book.php(55): App\Models\BookModel->saveBook(Array)
+#6 E:\xampp\htdocs\booklen\system\CodeIgniter.php(904): App\Controllers\Book->save()
+#7 E:\xampp\htdocs\booklen\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Book))
+#8 E:\xampp\htdocs\booklen\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\booklen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\xampp\htdocs\booklen\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-10 02:11:14 --> Column 'idBuku' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:11:14\', \'2022-09-10 02:11:14\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:11:14\', \'2022-09-10 02:11:14\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:11:14\', \'2022-09-10 02:11:14\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (:idBuku:, :namaBuku:, :genre:, :author:, :pinjam:, :kembali:)', [...], false)
+ 5 APPPATH\Models\BookModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Book.php(55): App\Models\BookModel->saveBook([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Book->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Book))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-10 02:12:28 --> mysqli_sql_exception: Column 'id' cannot be null in E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bo...', 0)
+#1 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 E:\xampp\htdocs\booklen\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 E:\xampp\htdocs\booklen\app\Models\BookModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 E:\xampp\htdocs\booklen\app\Controllers\Book.php(55): App\Models\BookModel->saveBook(Array)
+#6 E:\xampp\htdocs\booklen\system\CodeIgniter.php(904): App\Controllers\Book->save()
+#7 E:\xampp\htdocs\booklen\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Book))
+#8 E:\xampp\htdocs\booklen\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\booklen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\xampp\htdocs\booklen\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-10 02:12:28 --> Column 'id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `book` (`id`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:12:28\', \'2022-09-10 02:12:28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `book` (`id`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:12:28\', \'2022-09-10 02:12:28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `book` (`id`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:12:28\', \'2022-09-10 02:12:28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `book` (`id`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (:id:, :namaBuku:, :genre:, :author:, :pinjam:, :kembali:)', [...], false)
+ 5 APPPATH\Models\BookModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Book.php(55): App\Models\BookModel->saveBook([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Book->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Book))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-10 02:13:17 --> mysqli_sql_exception: Column 'idBuku' cannot be null in E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\xampp\htdocs\booklen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bo...', 0)
+#1 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 E:\xampp\htdocs\booklen\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 E:\xampp\htdocs\booklen\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 E:\xampp\htdocs\booklen\app\Models\BookModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 E:\xampp\htdocs\booklen\app\Controllers\Book.php(55): App\Models\BookModel->saveBook(Array)
+#6 E:\xampp\htdocs\booklen\system\CodeIgniter.php(904): App\Controllers\Book->save()
+#7 E:\xampp\htdocs\booklen\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Book))
+#8 E:\xampp\htdocs\booklen\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\booklen\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\xampp\htdocs\booklen\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-09-10 02:13:17 --> Column 'idBuku' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:13:17\', \'2022-09-10 02:13:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:13:17\', \'2022-09-10 02:13:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (NULL, \'Programming In Here\', \'Education\', \'Tasya\', \'2022-09-10 02:13:17\', \'2022-09-10 02:13:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `book` (`idBuku`, `namaBuku`, `genre`, `author`, `pinjam`, `kembali`) VALUES (:idBuku:, :namaBuku:, :genre:, :author:, :pinjam:, :kembali:)', [...], false)
+ 5 APPPATH\Models\BookModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Book.php(55): App\Models\BookModel->saveBook([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Book->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Book))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

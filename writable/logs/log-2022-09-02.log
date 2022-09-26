@@ -1,0 +1,103 @@
+CRITICAL - 2022-09-02 09:20:58 --> Undefined property: App\Controllers\Regist::$usermodel
+in APPPATH\Controllers\Regist.php on line 41.
+ 1 APPPATH\Controllers\Regist.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Regist::$usermodel', 'APPPATH\\Controllers\\Regist.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Regist->create()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regist))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 09:24:03 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Regist.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Regist->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 09:24:29 --> Class "App\Controllers\userModel" not found
+in APPPATH\Controllers\Regist.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Regist->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 09:25:59 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Regist.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Regist->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 09:26:36 --> Class "App\Controllers\userModel" not found
+in APPPATH\Controllers\Regist.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Regist->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 09:29:21 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Regist.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\Regist->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 09:31:52 --> Undefined property: App\Controllers\Regist::$usermodel
+in APPPATH\Controllers\Regist.php on line 52.
+ 1 APPPATH\Controllers\Regist.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Regist::$usermodel', 'APPPATH\\Controllers\\Regist.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Regist->create()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Regist))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 23:37:25 --> Undefined global variable $_SESSION
+in APPPATH\Views\admin\index.php on line 116.
+ 1 APPPATH\Views\admin\index.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH\\Views\\admin\\index.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/user/user', [], true)
+ 6 APPPATH\Controllers\Admin.php(44): view('admin/user/user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->user()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 23:38:21 --> Undefined global variable $_SESSION
+in APPPATH\Views\admin\index.php on line 116.
+ 1 APPPATH\Views\admin\index.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH\\Views\\admin\\index.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/user/user', [], true)
+ 6 APPPATH\Controllers\Admin.php(44): view('admin/user/user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->user()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 23:38:37 --> Undefined global variable $_SESSION
+in APPPATH\Views\admin\index.php on line 116.
+ 1 APPPATH\Views\admin\index.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH\\Views\\admin\\index.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/user/user', [], true)
+ 6 APPPATH\Controllers\Admin.php(44): view('admin/user/user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->user()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-02 23:38:39 --> Undefined global variable $_SESSION
+in APPPATH\Views\admin\index.php on line 116.
+ 1 APPPATH\Views\admin\index.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH\\Views\\admin\\index.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/user/user', [], true)
+ 6 APPPATH\Controllers\Admin.php(44): view('admin/user/user', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->user()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
